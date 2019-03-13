@@ -22,6 +22,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -29,21 +30,15 @@
               <item name="Object-Oriented-Programming-Lab-2019-Spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="Object-Oriented-Programming-Lab-2019-Spring" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Object-Oriented-Programming-Lab-2019-Spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Object-Oriented-Programming-Lab-2019-Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="Lab6" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,9 +66,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <frame x="56" y="-11" width="1311" height="780" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22699799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22644497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
