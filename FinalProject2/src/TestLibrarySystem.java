@@ -3,9 +3,10 @@ import java.util.*;
 public class TestLibrarySystem {
     public static void main(String args) {
         Scanner scan = new Scanner(System.in);
-        LibraryRecords libr = new LibraryRecords();
-        Student[] students;
-        Teacher[] teachers;
+        Map<Book, Date> smap = new HashMap<>();
+        LibraryRecords libr = new LibraryRecords(smap);
+        Student[] students = new Student[100];
+        Teacher[] teachers = new Teacher[100];
         int noOfStudents = 0;
         int noOfTeachers = 0;
 
@@ -36,6 +37,7 @@ public class TestLibrarySystem {
                     nameOfBook = scan.nextLine();
                     libr.booksList.remove(nameOfBook);
                     System.out.println("Deleted successfully\n");
+                    break;
                 }
 
                 case 3: {
@@ -43,7 +45,8 @@ public class TestLibrarySystem {
                     String nameOfBook;
                     nameOfBook = scan.nextLine();
                     Date date = libr.booksList.get(nameOfBook);
-                    System.out.println("Book name: " + nameOfBook + " LastDate: " + date "\n");
+                    System.out.println("Book name: " + nameOfBook + " LastDate: " + date + "\n");
+                    break;
                 }
 
                 case 4: {
@@ -53,6 +56,7 @@ public class TestLibrarySystem {
                     if(check == 1) {
                         System.out.println("Enter student name\n");
                         String name;
+                        name = scan.nextLine();
                         System.out.println("This is the list of books\n");
                         Set< Map.Entry< Book, Date> > st = libr.booksList.entrySet();
 
@@ -68,11 +72,21 @@ public class TestLibrarySystem {
                             String bname;
                             bname = scan.nextLine();
                             libr.booksList.get(bname);
+                            Book book = new Book(bname, "author1", "publisher1");
                             Date dueDate = new Date(1296000000);
-                            bookList.put(bname, dueDate);
+                            bookList.put(book, dueDate);
                         }
-                        Student student = new Student();
+                        Student student = new Student(name, bookList, 0.0);
+                        students[noOfStudents] = student;
+                        noOfStudents++;
                     }
+                    break;
+                }
+                case 5: {
+                    System.out.println("enter if a student or a teacher is returning a book.\n");
+                    System.out.println("Enter name of student that is returning the book:");
+                    String sname;
+                    break;
                 }
             }
         }

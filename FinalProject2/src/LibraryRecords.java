@@ -5,5 +5,7 @@ import java.util.Map;
 public class LibraryRecords {
     Map<Book, Date> booksList = new HashMap<Book, Date>();
 
-
+    public LibraryRecords(Map<Book, Date> booksList) {
+        this.booksList = booksList;
+    }
 }
