@@ -1,14 +1,16 @@
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Teacher {
+public class Teacher extends User implements TeacherInterface{
     String name;
-    Map<String, Book> books;
+    Map<Book, Date> books;
     double fine;
 
-    public Teacher(String name, Map<String, Book> books) {
+    public Teacher(String name, Map<Book, Date> books, double fine) {
         this.name = name;
         this.books = books;
+        this.fine = fine;
     }
 
     public String getName() {
@@ -19,11 +21,12 @@ public class Teacher {
         this.name = name;
     }
 
-    public Map<String, Book> getBooks() {
+    @Override
+    public Map<Book, Date> getBooks() {
         return books;
     }
 
-    public void setBooks(Map<String, Book> books) {
+    public void setBooks(Map<Book, Date> books) {
         this.books = books;
     }
 

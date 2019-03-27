@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.Map;
 
-public class Student {
+public class Student extends User implements StudentInterface{
     String name;
     Map<Book, Date> books;
     double fine;
